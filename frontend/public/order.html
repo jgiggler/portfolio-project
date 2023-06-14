@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Gilger</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <h1>Joel Gilger</h1>
+    </header>
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="order.html">Order</a>
+        <a href="staff.html">Staff</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Order Now</h2>
+        <article class="order_form">
+            <p class="contact_reason">You can order a product from us now by selecting an item below</p>
+            <form action="/order" method="POST">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="required" for="firstlast">First and Last name
+                        <input class="required" type="text" name="firstlast" id="firstlast" maxlength="100"
+                        required placeholder="First Last" autofocus/>
+                    </label>
+                    <label class="required" for="email">Email
+                        <input 
+                            type="email"
+                            name="email"
+                            id="email"
+                            size="50"
+                            maxlength="100"
+                            required
+                            pattern="[^ @]+@[^ @]+.[a-z]+"
+                            placeholder="name@host.com" />                   
+                    </label>
+                    <label class="required" for="address">Address
+                        <input type="text" name="address" id="address" maxlength="110"
+                        required placeholder="123 Street Name"/>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Select a Product</legend>
+                    <table>
+                        <caption>Products Available</caption>
+                        <thead>
+                            <tr>
+                                <td>Company</td>
+                                <td>Product</td>
+                                <td>Price</td>
+                                <td>Select One</td>
+                            </tr>
+                        </thead>
+                        <tbody>                        
+                            <tr>
+                                <td>AGYM</td>
+                                <td>Spinning Cat Scratcher Ball</td>
+                                <td class="price">$52.99</td>
+                                <td><label for="choice"><input type="radio" name="choice" value="Spinning Cat Scratcher Ball" required/></label></td>
+                            </tr>
+                            <tr>
+                                <td>Jasonwell</td>
+                                <td>Foldable Dog Pool</td>
+                                <td class="price">$27.25</td>
+                                <td><label for="choice"><input type="radio" name="choice" value="Foldable Dog Pool"/></label></td>
+                            </tr>
+                            <tr>
+                                <td>Expawlorer</td>
+                                <td>Dog Fence Window</td>
+                                <td class="price">$30.50</td>
+                                <td><label for="choice"><input type="radio" name="choice" value="Dog Fence Window"/></label></td>
+                            </tr>
+                            <tr>
+                                <td>Lollimeow</td>
+                                <td>Capsule Pet Travel Backpack</td>
+                                <td class="price">$59.00</td>
+                                <td><label for="choice"><input type="radio" name="choice" value="Capsule Pet Travel Backpack"/></label></td>                 
+                            </tr>
+                            <tr>
+                                <td>Drool\'d</td>
+                                <td>Cat Hamster Wheel</td>
+                                <td class="price">$349.75</td>
+                                <td><label for="choice"><input type="radio" name="choice" value="Cat Hamster Wheel"/></label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <label class="required" for="quantity"> Quantity (between 1 and 500)
+                    <input type="number" name="quantity" min="1" max="500" placeholder="Amount" required/>
+                    </label>
+                    <label for="instructions">Delivery Instructions</label>
+                    <input type="textarea" name="instructions" placeholder="Explain..."/>
+                    
+                </fieldset>
+                <button>Submit</button>
+            </form>    
+        </article>
+        </section>
+    </main>
+    <footer>
+        <p>
+        &copy; 2023 Joel Gilger
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "joel_gilger_app_backend",
+  "version": "1.0.0",
+  "description": "Patient Blood records using MERN",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon controller.mjs"
+  },
+  "author": "Joel Gilger",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.3",
+    "nodemon": "^2.0.22",
+    "rest": "^2.0.0"
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Gilger</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='random.js'></script>
+</head>
+<body>
+    <header>
+        <h1>Joel Gilger</h1>
+    </header>
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="order.html">Order</a>
+        <a href="staff.html">Staff</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Staff List</h2>
+        <article>
+            <section class="staff_page_exp">
+            <p >This page is used to populate a table with randomly generated people using a <a href="https://randomuser.me">Random User Generator</a> API. 
+                The 2 buttons below can be used to make a call to the API through the browser or through the server respectively. Once the data is found, it
+                gets dynamically added to the table.
+            </p>
+
+            <p class="person_API">Call the API through the Browser or the Server</p>
+            <p class="buttons_for_staff"><button id="fromBrowser" value="Call through Browser">Browser request</button>
+            <button id="fromServer" value="Call through Server">Server request</button></p>
+        </section>
+        </article>
+        <article>
+            <section>
+            <table class="staff_table">
+                <thead>
+                    <tr>
+                        <td class="staff_table_head_begin">Portrait</td>
+                        <td class="staff_table_head">Name &amp; Email</td>
+                        <td class="staff_table_head">Telephone</td>
+                        <td class="staff_table_head_end">City</td>
+                    </tr>
+                </thead>
+                <tbody id="randomPerson">
+
+                </tbody>
+            </table>
+        </section>
+        </article>
+        </section>
+        <footer>
+            <p>
+            &copy; 2023 Joel Gilger
+            </p>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,483 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto:wght@300&display=swap');  
+  
+  /* @import 'node_modules/modern-normalize/modern-normalize.css'; */
+        /* npm install modern-normalize
+          Resets elements for browser consistency.  
+          https://www.npmjs.com/package/modern-normalize
+        */         
+  
+  
+@import "component1.css";   
+  
+
+/*   ----- Variables  -----  */
+:root {
+    --light-color: #F2CDAC;
+    --medium-color: #F2AD85;
+    --dark-color:  #401201;
+    --accent-color: rgba(0,255,0,0.3);
+  }
+  
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+  body {       /* Can alternatively define in html {} or :root {} */
+    background-color:black;
+    background-image: url(images/background-sunset-hawaii.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    max-width: auto;
+    color: var(--dark-color);
+    margin-left:5%;
+    margin-right: 5%;
+    padding:0px;
+}
+  
+  /*  ----- Page layout blocks -----  */
+  header {
+    
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 5px;
+    text-indent: 20px;
+}
+  main {
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--dark-color);
+    color: var(--accent-color);
+    
+    
+    
+  }
+  section {
+    padding: 1%;
+    margin: 1%;
+    
+}
+    article {
+        border-radius: 5px;
+        padding-bottom: 5px;
+        background-color: var(--medium-color);
+        color: var(--dark-color);
+       
+    }
+      #topic1 {}
+      #topic2 {}
+  div {}
+  aside {}
+  footer {
+    border-radius: 5px;
+    background-color: var(--dark-color);
+    color: var(--accent-color);
+    padding: 5px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+  
+  /* ----- Anchors ----- Text links */
+  a {}
+  a:link {}
+  a:hover {}
+  a:active {}
+  a:visited {}
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+  nav {
+    text-align: center;
+    padding: 1%;
+}
+  nav a {
+    background-color: green;
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+  }
+  nav a:hover {
+    background-color: grey;
+    color: whitesmoke;
+  }
+  
+  .Concepts{
+    background-color: var(--dark-color);
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    font-size: 12px;
+    padding: 5px;
+    margin: 5px;
+
+  }
+  /*  -----  Typography  ----- */
+  .response_body {
+    text-decoration: none;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+  }
+  .learned_paragraphs {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .learned_headers {
+    padding-top: 50px;
+    margin: 2%;
+  }
+  
+  p {}
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+  
+  h1, h2, h3, h4, h5, h6 {font-family: 'Aboreto', cursive;} 
+  h1 {}
+  h2 {
+    text-decoration: underline; 
+  }
+  h3 {
+    text-decoration: underline;
+    padding-top: 5px;
+  }
+  h4 {}
+  h5 {}
+  h6 {}
+  
+  .response_title{
+    padding-top: 2%;
+    font-family: 'Aboreto', cursive;
+    text-decoration: none;
+  }
+  
+  abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {}
+  
+  /*  ----- Coding or instructional typography ----- */
+  pre {}
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {}
+  
+  /*  ----- Table ----- */
+  table {margin-left: auto;
+  margin-right: auto;
+width: 100%;
+border-collapse: collapse;
+
+}
+  caption {background-color: var(--light-color);
+  padding: 10px;
+width: 40%;
+margin-left: auto;
+margin-right: auto;
+}
+  thead {background-color: var(--medium-color);
+    font-size: 20px;
+    font-weight: 800;
+  }
+  tbody {background-color: var(--light-color);}
+  tfoot {}
+  tr {}
+    tr:nth-child(even) {
+      background-color: rgb(255, 236, 185);
+    }
+  th {}
+  td {border:2px solid var(--dark-color);
+    padding: 10px
+  }
+    td:nth-child(1) {}
+  colgroup {}
+  data {}
+  datalist {}
+
+  .price {
+    text-align: right;
+    padding-right: 8px;
+  }
+  
+  
+  /*  ----- Form ----- */
+  .order_form {
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    color: darkgreen;
+    padding: 1%;
+  }
+  form {
+    background-color: var(--dark-color);
+  }
+  
+  .person_API {
+    background-color: var(--light-color);
+    font-size: 20px; 
+  }
+
+  .staff_page_exp{
+    display: block;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .buttons_for_staff {
+    display: block;  
+    margin-top: -30px;
+  }
+
+
+  .staff_table {
+    margin-top: 2%;
+
+  }
+
+  .staff_table_head {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    
+    border-right: 2px solid burlywood;
+  }
+
+  .staff_table_head_begin {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border-right: 2px solid burlywood;
+  }
+
+  .staff_table_head_end{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border-left: 2px solid burlywood;
+  }
+
+
+  .contact_reason {
+    background-color: var(--light-color);
+    border-radius: 10px;
+    color: darkgreen;
+    padding: 1%;
+  }
+
+  fieldset {
+    
+    border-color: var(--light-color);   
+    margin-top:2%; 
+    padding: 2%;
+    
+  }
+    legend {
+      color:peachpuff;
+      padding: 2%;
+      border: 1px solid var(--medium-color);
+      border-bottom: 0;
+      border-top: 0;
+      font-size:;
+      
+    }
+  label {
+    display:block;
+    color: var(--light-color);
+    margin-top: 2%;
+   
+  }
+    button {
+      background-color: whitesmoke;
+      font-size:120%;
+      padding:2%;
+      font-family:inherit;
+      border-radius: 5px;
+      margin-top: 2%;
+    }
+    button:hover {
+      background-color: orange;
+    }
+
+    
+  #fromBrowser {
+    background-color: var(--accent-color);
+    margin-right: 10px;
+  }
+
+  #fromServer {
+    background-color: var(--accent-color);
+    margin-left: 10px;
+  }
+
+  #fromBrowser:hover {
+    background-color: green;
+  }
+
+  #fromServer:hover {
+    background-color: green;
+  }
+
+    .fastfood {
+      color: var(--light-color);
+      
+    }
+    .fastfood_response {
+      background-color: var(--light-color);
+      color: var(--dark-color);
+      padding: 2%;
+    }
+    input {
+      font-size:110%;
+      padding:1%;
+      font-family:inherit;
+    }
+    input:hover {
+      background-color: var(--medium-color);
+    }
+    
+    output {}
+    meter {}
+    progress {}
+    select {
+      background-color: var(--light-color);
+      margin-top: 2%;
+      font-size:110%;
+      padding:2%;
+      font-family:inherit;
+    }
+
+      optgroup {}
+      option {}
+    textarea {
+      margin-top: 2%;
+      font-size:110%;
+      padding:1%;
+      font-family:inherit;
+      width: 95%;
+      border-radius: 5px;
+      
+      
+    }
+    textarea:hover {
+      background-color: var(--medium-color);
+      
+    }
+    textarea:valid {
+      border:4px solid lightgreen;
+      border-radius: 5px;
+    }
+    textarea:invalid {
+      border:4px solid red;
+      border-radius: 5px;
+    }
+    :focus{
+      background-color: lightblue;
+  }
+    *:required {
+    border:5px solid red;
+  }
+    label.required:after {
+    content:" *";
+    color:red;
+  }
+  input:invalid {
+    border:4px solid red;
+    border-radius: 5px;
+  }
+  input:valid {
+    border:4px solid lightgreen;
+    border-radius: 5px;
+  }
+  input::placeholder {
+    color:darkgreen;
+  }
+  textarea::placeholder{
+    color:darkgreen;
+  }
+  /* ----- Media ----- */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+  figure {
+    border-radius: 20px;
+    background-color: var(--dark-color);
+    padding: 1%;
+  }
+    figcaption {
+      border-radius: 5px;
+        padding: 3%;
+        text-align: center;
+        background-color: var(--light-color);
+    }
+    figure img {
+      border-radius: 5px;
+    }
+  svg {}
+  picture {}
+    source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {}
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  .gallery {}
+  
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {}
+  
+  @keyframes App-logo {}
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {}
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
